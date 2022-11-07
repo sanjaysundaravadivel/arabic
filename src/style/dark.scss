@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+$font-family: "Inter", sans-serif;
+$bg-color: #252954;
+$body-color: #9b9ca7;
+$main-bg: #0e0e23;
+:root {
+ --delay: 0s;
+}
+.Pen{
+  border:none;
+  background: none;
+}
+option{
+  color:black;
+}
+.app-dark {
+  .card-title{
+    color:white;
+  }
+
+  input{
+    background: none;
+    color:white;
+  }
+  color: white;
+  .navbar_custom{
+    background-color: $bg-color !important;
+    color:white;
+    .page_title_1 {
+      color:white
+    }
+    .page_title_2{
+      color:#5c89b8
+    }
+  }
+  .tittle{
+
+    span {
+      color: rgb(31, 31, 216);
+    }
+  }
+  .multi_step_form {
+    #msform #progressbar li.active {
+      color: #5cabb8;
+  }
+  #msform #progressbar li.active:after,li.active::before {
+   
+    background: #5c89b8 !important;
+  }
+    background: rgb(26, 32, 73);
+        background: radial-gradient(
+         circle,
+         rgba(26, 32, 73, 1) 0%,
+         rgba(19, 22, 47, 1) 100%
+        );
+      
+    #msform {
+      background-color: $main-bg;
+      .uploader {
+        .lead{
+          color:white
+        }
+       label{
+        color:white;
+        background: rgb(26, 32, 73);
+        background: radial-gradient(
+         circle,
+         rgba(26, 32, 73, 1) 0%,
+         rgba(19, 22, 47, 1) 100%
+        );
+       }
+      }
+    }
+  }
+  .Body2{
+    background-color: $bg-color;
+    color: $body-color;
+    .wrapper {
+      .table{
+        color:white
+      }
+      background-color: $main-bg;
+      .card{
+        background: rgb(26, 32, 73);
+        background: radial-gradient(
+         circle,
+         rgba(26, 32, 73, 1) 0%,
+         rgba(19, 22, 47, 1) 100%
+        );
+      }
+      .cards-header{
+        background: #10122b;
+      }
+    }
+    .destination-card{
+      background: rgb(26, 29, 58);
+      background: linear-gradient(
+       45deg,
+       rgba(26, 29, 58, 1) 0%,
+       rgba(33, 39, 82, 1) 100%
+      );
+    }
+    .header{
+      background: radial-gradient(
+          circle,
+          rgba(20, 24, 52, 1) 0%,
+          rgba(19, 22, 47, 1) 100%
+         );
+      &:before{
+        background-color: $main-bg;
+       
+      }
+    } 
+  }
+}
+.app-light{
+  input{
+    background: none;
+    color:black;
+  }
+  color:black;
+  .navbar_custom{
+    background-color: white !important;
+    .page_title_1{
+      color:black
+    }
+    .page_title_2{
+      color:red
+    }
+  }
+  .multi_step_form {
+    #msform #progressbar li.active {
+      color: red;
+  }
+  #msform #progressbar li.active:after,li.active::before {
+  
+    background: green !important;
+  }
+}
+  .Body2{
+    background: #fe8c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+       color: black;
+
+       .wrapper {
+
+        background: rgb(220 229 235 / 74%);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(62, 125, 160, 0.3);
+        .card{
+          background:radial-gradient(circle, rgb(195 200 233) 0%, rgb(147 149 171) 100%);
+         
+        }
+        .cards-header {
+          background: #b3b7d5;
+        }
+        .table{
+          color:black
+        }
+        .destination-card {
+          background: linear-gradient(45deg, rgb(45 45 52) 0%, rgb(127 129 141) 100%);;
+        }
+      .header{
+        background:radial-gradient(circle, rgb(195 200 233) 0%, rgb(147 149 171) 100%);
+      &:before{
+       
+      }
+    } 
+      }
+  }
+}
